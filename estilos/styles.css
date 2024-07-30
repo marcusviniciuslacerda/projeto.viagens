@@ -6,23 +6,39 @@ body{
     border-radius: 10px;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    min-height: 100vh;
+    max-width: 100%;
+    
+}
+
+
 header{
     background-color: dimgray;
     color: white;
     padding: 1rem 0;
 }
- 
+
+
+
 nav ul{
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 5px;
     margin: 10px;
+    flex-wrap: wrap; 
 
 }
 
 nav ul li{
     margin: 0 1rem ;
+   
 }
 
 nav ul li a{
@@ -37,6 +53,12 @@ nav ul li a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 0 1rem; 
+}
+
+
+section > p{
+    padding-bottom: 2em;
 }
 
 section.hero{
@@ -50,6 +72,7 @@ section.hero{
 section#img001{
     background-image: url('../imagens/img001.jpg');
     background-position: center;
+    display: flexbox;
 }
 
 
@@ -111,6 +134,36 @@ form button {
     color: #fff;
     border: none;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .destination, .package {
+        width: calc(50% - 2rem);
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+      
+    }
+
+    nav ul li {
+        margin: 1rem ;
+    }
+
+    .destination, .package {
+        width: 100%;
+    }
 }
 
 
