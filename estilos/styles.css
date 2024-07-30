@@ -54,7 +54,7 @@ section.hero{
 }
 
 section#img001{
-    
+    background-image: url("/imagens/img001.jpg");
     background-position: right center;
 }
 
